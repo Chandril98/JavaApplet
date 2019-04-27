@@ -1,9 +1,9 @@
-import java.applet.*;
+import java.applet.*; // applet package
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.*; // to handle all the actions like buttons and methodes
 
 
- public class JavaCalc extends Applet implements ActionListener
+ public class JavaCalc extends Applet implements ActionListener 
 {
 	 TextField T1,T2,T3;
 	 Label L1,L2,L3;
@@ -19,29 +19,29 @@ import java.awt.event.*;
 		setBackground(Color.magenta);
 	  
 	   L1= new Label(" Enter First value: ");
-	   L2= new Label(" Enter Second value: ");
+	   L2= new Label(" Enter Second value: "); // Give them some names, they are not just variables anymore 
 	   L3= new Label(" Result ");
 	    
 	    L1.setBounds (50,100,100,20);
-	    L2.setBounds (50,140,100,20);
+	    L2.setBounds (50,140,100,20); // They are not gonna float in the page, so make some boundary for them
 	    L3.setBounds (50,250,100,20);
 	
 	   T1=new TextField();
-	   T2=new TextField();
+	   T2=new TextField();// to make the text-boxes ..  you can creat many more but i don't need that
 	   T3=new TextField();
 
 		T1.setBounds (200,100,100,20);
-		T2.setBounds (200,140,100,20);
+		T2.setBounds (200,140,100,20);// they also need some boundary
 		T3.setBounds (200,250,100,20);	
 	   
 	   B1=new Button( "+" );
-	   B2=new Button( "-" );
+	   B2=new Button( "-" );// creat as much button u need .. just dont make self destract button 
 	   B3=new Button( "*" );
 	   B4=new Button( "/" );
 	
-        B1.setBounds (50,200,50,20);
-		B2.setBounds (110,200,50,20);
-		B3.setBounds (170,200,50,20);
+                B1.setBounds (50,200,50,20);
+	        B2.setBounds (110,200,50,20);
+		B3.setBounds (170,200,50,20);// again boundaries .. boaring but u don't have to think much 
 		B4.setBounds (230,200,50,20);
 		
 		
@@ -50,7 +50,7 @@ import java.awt.event.*;
 		add(L2);
 		add(L3);
 		
-		add(T1);
+		add(T1);                       // Now add everything u made on the frame 
 		add(T2);
 		add(T3);
 		
