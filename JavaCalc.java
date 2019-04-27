@@ -18,10 +18,10 @@ import java.awt.event.*;
 		setLayout(null);
 		setBackground(Color.magenta);
 	  
-	   L1= new Label("Enter First value:");
-	   L2= new Label("Enter Second value");
-	   L3= new Label("Result");
-	   
+	   L1= new Label(" Enter First value: ");
+	   L2= new Label(" Enter Second value: ");
+	   L3= new Label(" Result ");
+	    
 	    L1.setBounds (50,100,100,20);
 	    L2.setBounds (50,140,100,20);
 	    L3.setBounds (50,250,100,20);
